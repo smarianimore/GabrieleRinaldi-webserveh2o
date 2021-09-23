@@ -20,6 +20,6 @@ Per eseguire il tutto dovrebbe essere sufficiente:
   4. Da terminale andare nell’altra cartella (`h2o-medium-tutorial)
   5. Compilare il progetto java col comando `gradle build` (questo installa automaticamente le dipendenze richieste, in particolare del server web javalin)
   6. Eseguire la classe `ModelEndpoint`
-  7. Testarne il funzionamento digitando da terminale: `curl -X GET http://localhost:8080/predict?fixed_acidity=7.0&volatile_acidity=0.7&citric_acid=0&residual_sugar=1.9&chlorides=0.076&free sulfur_dioxide=11&total_sulfur dioxide=34&density=0.9978&pH=3.51&sulphates=0.56&alcohol=9.4 (tutto su una sola riga, copi e incolli)`
+  7. Testarne il funzionamento digitando da terminale: `curl -X GET http://localhost:8080/predict?fixed_acidity=7.0&volatile_acidity=0.7&citric_acid=0&residual_sugar=1.9&chlorides=0.076&free sulfur_dioxide=11&total_sulfur dioxide=34&density=0.9978&pH=3.51&sulphates=0.56&alcohol=9.4` (tutto su una sola riga, copi e incolli)
 
 Il comando di cui al punto 7 non è altro che il modo di fare chiamate HTTP via terminale (tramite programma curl): prima del punto interrogativo c’è l’indirizzo del server web, e dopo i parametri (query string, forse ne avete parlato in TIW) che servono al modello per fare la predizione.
